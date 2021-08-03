@@ -164,7 +164,7 @@ const Main = () => {
                     return <link href={url} rel="stylesheet" />;
                 })}
             </Head>
-            <Container className="node">
+            <Container className="node" isDark={dark}>
                 <Loading isLoading={!duration}>
                     <p>loading..</p>
                 </Loading>

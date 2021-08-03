@@ -168,7 +168,7 @@ const Main = () => {
                 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
                 <meta name="viewport" content="viewport-fit=cover, user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
             </Head>
-            <Container className="node">
+            <Container className="node" isDark={dark}>
                 <Loading isLoading={!duration}>
                     <p>loading..</p>
                 </Loading>
@@ -216,7 +216,7 @@ const Container = styled.div`
     box-sizing: border-box;
     align-items: stretch;
     position: relative;
-    background-color: ${(props) => (props.isDark ? rgb(47, 48, 49) : "white")};
+    background-color: ${(props) => (props.isDark ? "rgb(47, 48, 49)" : "white")};
     @supports (-webkit-touch-callout: none) {
         height: -webkit-fill-available;
     }
